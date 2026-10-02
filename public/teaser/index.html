@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Reserva dos Ipês | Lançamento Morais Engenharia em Senador Canedo</title>
+<meta name="description" content="O primeiro condomínio fechado da Morais Engenharia está prestes a nascer no Parque dos Buritis, em Senador Canedo. Entre para a lista de interesse.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Reserva dos Ipês | Lançamento Morais Engenharia">
+<meta property="og:description" content="O primeiro condomínio fechado da Morais está prestes a nascer no Parque dos Buritis, em Senador Canedo.">
+<meta property="og:image" content="/teaser/img/familia.webp">
+<meta name="theme-color" content="#C99645">
+<link rel="icon" href="/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/apple-icon.png">
+<!-- Teaser de pré-lançamento, portado do widget HTML do Elementor (WordPress) para página estática.
+     Mudanças em relação ao original: imagens servidas de /teaser/img/ (antes em wp-content/uploads) e este <head>. -->
+<style>html,body{margin:0;padding:0;background:#fff}</style>
+</head>
+<body>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap');
+.rdi{
+  --am:#F8C21C; --mr:#4A2608; --mr-2:#3A1D05; --oc:#C58B3A; --az:#2B2A6E; --tl:#3F9AA0;
+  --foto-familia:url('/teaser/img/familia.webp'); --foto-paisagem:none;   /* troque none por url('...') */
+  --hand:'Gochi Hand','Comic Sans MS',cursive;
+  --sans:'Montserrat',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+.rdi,.rdi *{box-sizing:border-box}
+.rdi{font-family:var(--sans);line-height:1.55;overflow:hidden;-webkit-font-smoothing:antialiased}
+.rdi h1,.rdi h2,.rdi h3,.rdi p{margin:0;padding:0;font-family:inherit;letter-spacing:0;text-transform:none}
+.rdi a{text-decoration:none}
+.rdi .wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 24px}
+.rdi .hand{font-family:var(--hand);font-weight:400;line-height:.95;display:block}
+.rdi .defs{position:absolute;width:0;height:0;overflow:hidden}
+.rdi .logo{display:block;height:auto}
+.rdi .logo--white{--lg-a:#fff;--lg-b:#fff}
+.rdi .btn{display:inline-block;border:0;border-radius:2px;font:600 15px/1 var(--sans);padding:19px 30px;cursor:pointer;transition:background .2s,color .2s}
+.rdi :focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.rdi .photo{position:relative;background-size:cover;background-position:center}
+.rdi .photo--familia{background-image:var(--foto-familia),linear-gradient(160deg,#9C7CB8,#7C8E5C 70%,#B9A77B)}
+.rdi .photo__tag{position:absolute;left:14px;bottom:14px;font-size:11px;color:#fff;background:rgba(0,0,0,.4);padding:4px 8px;border-radius:2px}
+/* formulário */
+.rdi .form{display:grid;gap:16px}
+.rdi .fld label{display:block;font-size:13px;font-weight:500;margin-bottom:6px}
+.rdi .fld input,.rdi .fld select{width:100%;height:50px;border-radius:2px;font:400 15px var(--sans);padding:0 14px;margin:0;box-shadow:none;-webkit-appearance:none;appearance:none}
+.rdi .fld select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23666' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+.rdi .ok{display:none;font-size:16px}
+.rdi .done .form{display:none}
+.rdi .done .ok{display:block}
+/* árvore */
+.rdi .tree{display:block;overflow:visible}
+.rdi .tree .f{transform-box:view-box;transform-origin:0 0;transform:rotate(var(--r))}
+.rdi .tree .brc{stroke-dasharray:1;stroke-dashoffset:0}
+.rdi.js .tree.anim .brc{stroke-dashoffset:1}
+.rdi.js .tree.anim .trk{opacity:0;transform:scaleY(.15);transform-box:fill-box;transform-origin:bottom}
+.rdi.js .tree.anim .f{transform:rotate(var(--r)) scale(0)}
+.rdi.js .tree.anim.in .trk{animation:rdi-grow .9s var(--ease) forwards}
+.rdi.js .tree.anim.in .brc{animation:rdi-draw 1.2s var(--ease) .6s forwards}
+.rdi.js .tree.anim.in .f{animation:rdi-pop .6s cubic-bezier(.3,1.5,.5,1) var(--d) forwards}
+@keyframes rdi-grow{to{opacity:1;transform:scaleY(1)}}
+@keyframes rdi-draw{to{stroke-dashoffset:0}}
+@keyframes rdi-pop{to{transform:rotate(var(--r)) scale(1)}}
+.rdi.js .intro{opacity:0;transition:opacity 1.2s ease .2s}
+.rdi.js .intro.in{opacity:1}
+.rdi .petals{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:1}
+.rdi .petal{position:absolute;top:-40px;left:var(--x);width:var(--s);height:var(--s);color:var(--c);opacity:.8;animation:rdi-fall var(--t) linear var(--d) infinite}
+.rdi .petal svg{width:100%;height:100%;animation:rdi-sway 4s ease-in-out infinite alternate}
+@keyframes rdi-fall{to{transform:translateY(120vh) rotate(300deg)}}
+@keyframes rdi-sway{from{transform:translateX(-18px)}to{transform:translateX(18px)}}
+@media (prefers-reduced-motion:reduce){
+  .rdi *{animation:none!important;transition:none!important}
+  .rdi .petals{display:none}
+  .rdi.js .intro{opacity:1}
+  .rdi.js .tree.anim .f{transform:rotate(var(--r))}
+  .rdi.js .tree.anim .brc{stroke-dashoffset:0}
+  .rdi.js .tree.anim .trk{opacity:1;transform:none}
+}
+
+.p5{--tx:#3A1D05;--tx2:#6A5440;--line:#E8DDCC;color:var(--tx);background:#fff}
+.p5 .wrap{max-width:1240px}
+.p5 .logo--mono{--lg-a:#3A1D05;--lg-b:#3A1D05}
+.p5 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--mr);color:#fff;border-radius:3px}
+.p5 .btn:hover{background:#6E3A0E}
+.p5 .btn--ghost{background:transparent;color:var(--mr);box-shadow:inset 0 0 0 1.5px var(--mr)}
+.p5 .btn--ghost:hover{background:var(--mr);color:#fff}
+.p5 .btn--ghost-light{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.75)}
+.p5 .btn--ghost-light:hover{background:#fff;color:var(--mr)}
+.p5 .btn--wa{background:#1FA855}.p5 .btn--wa:hover{background:#178A45}
+.p5 .btn .ic{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.p5 .ic{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.p5 .fl{width:18px;height:18px;flex:none}
+
+.p5 .wai{width:20px;height:20px;flex:none;display:block}
+.p5 .logo{height:auto}
+.p5 .hero__alt a{display:inline-flex;align-items:center;gap:8px}
+.p5 .hero__alt .wai{color:#128C4A}
+.p5 .wa-float .wai{width:30px;height:30px;color:#fff}
+.p5 .it .it__logo{width:84px;height:auto}
+.p5 .form{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px}
+.p5 .form .full{grid-column:1/-1}
+.p5 .h2{font-size:clamp(28px,2.9vw,42px);font-weight:600;line-height:1.15;color:var(--tx)}
+
+/* ---------- header ---------- */
+
+/* ---------- HERO: árvore gigante + formulário dentro dela ---------- */
+.p5 .hero{position:relative;overflow:hidden;min-height:max(760px,100svh);
+  background:radial-gradient(ellipse 55% 60% at 72% 45%,#D6A052 0%,transparent 70%),linear-gradient(180deg,#C99645 0%,#C08533 100%)}
+.p5 .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1fr) 560px;gap:56px;align-items:center;min-height:max(820px,100svh);padding-top:64px;padding-bottom:64px}
+.p5 .hero{--tw:min(900px,70vw)}
+.p5 .hero__txt{align-self:center}
+.p5 .hero__tree{position:absolute;z-index:1;bottom:-4px;width:var(--tw);right:calc(max(0px,(100vw - 1240px)/2) + 304px - var(--tw)/2)}
+.p5 .lead{display:block;font-size:clamp(22px,2.1vw,31px);font-weight:300;line-height:1.35;color:var(--tx);max-width:17em}
+.p5 .lead strong{font-weight:700}
+.p5 .city{max-width:4.6em;font-size:clamp(70px,7.6vw,124px);color:var(--tx);margin:12px 0 22px}
+.p5 .sub{font-size:18px;color:#4A2F14;max-width:27em;margin-bottom:40px}
+.p5 .sub strong{font-weight:700}
+.p5 .facts{list-style:none;margin:0;padding:24px 0 0;border-top:1px solid rgba(58,29,5,.2);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;max-width:560px}
+.p5 .facts li{display:flex;flex-direction:column;gap:10px;font-size:14px;font-weight:700;line-height:1.35}
+.p5 .facts .ic{width:24px;height:24px;stroke:var(--tx);stroke-width:1.6}
+.p5 .hero__alt{margin-top:28px;font-size:15px;color:#4A2F14}
+.p5 .hero__alt a{color:var(--tx);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+
+/* card do formulário */
+.p5 .card{position:relative;background:#fff;border-radius:6px;padding:40px 40px 36px;box-shadow:0 40px 80px -30px rgba(58,29,5,.55),0 2px 0 rgba(58,29,5,.05);align-self:center}
+.p5 .card__t{font-family:var(--hand);font-size:36px;line-height:1;color:var(--mr);margin-bottom:10px}
+.p5 .card__s{font-size:14px;color:var(--tx2);margin-bottom:20px}
+.p5 .fld label,.p5 .seg legend{display:block;font-size:13px;font-weight:700;color:var(--tx);margin-bottom:7px;padding:0}
+.p5 .fld input{height:50px;background:#FBF8F3;border:1px solid var(--line);border-radius:3px;color:var(--tx);font-size:16px;transition:border-color .2s,background .2s}
+.p5 .fld input:focus{border-color:var(--oc);background:#fff;outline:0;box-shadow:0 0 0 3px rgba(197,139,58,.2)}
+.p5 .fld input[aria-invalid=true]{border-color:#C0392B}
+.p5 .seg{border:0;margin:0;padding:0}
+.p5 .seg__opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.p5 .seg label{position:relative;cursor:pointer}
+.p5 .seg input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.p5 .seg span{display:flex;align-items:center;justify-content:center;gap:8px;height:54px;border:1px solid var(--line);border-radius:3px;background:#FBF8F3;font-size:15px;font-weight:700;color:var(--tx2);transition:all .2s}
+.p5 .seg .ic{width:18px;height:18px;stroke:currentColor;stroke-width:1.8}
+.p5 .seg input:checked + span{background:var(--mr);border-color:var(--mr);color:#fff}
+.p5 .seg input:focus-visible + span{outline:2px solid var(--oc);outline-offset:2px}
+.p5 .seg.invalid span{border-color:#C0392B}
+.p5 .form .btn{width:100%;height:58px;padding:0 20px;background:var(--am);color:var(--mr-2);font-size:16px;font-weight:700;margin-top:4px}
+.p5 .form .btn:hover{background:#FFD24D}
+.p5 .err{font-size:13px;color:#C0392B;margin:-4px 0 0}
+.p5 .err:empty{display:none}
+.p5 .ok[hidden],.p5 .form[hidden]{display:none}
+.p5 .ok{display:block;text-align:center;padding:8px 0}
+.p5 .ok .flw{display:flex;justify-content:center;gap:6px;margin-bottom:18px}
+.p5 .ok .fl{width:26px;height:26px}
+.p5 .ok h3{font-family:var(--hand);font-weight:400;font-size:40px;line-height:1;color:var(--mr);margin-bottom:12px}
+.p5 .ok p{font-size:16px;color:var(--tx2);margin-bottom:24px}
+.p5 .ok .btn{width:100%;height:54px;padding:0}
+
+/* ---------- capítulo ---------- */
+.p5 .cap{display:grid;grid-template-columns:1fr 1fr}
+.p5 .cap .photo{min-height:660px}
+.p5 .cap__txt{padding:120px max(24px,calc((100vw - 1240px)/2 + 24px)) 120px 88px;color:var(--tx2);font-size:17px;align-self:center}
+.p5 .cap__txt p{max-width:30em;margin-bottom:16px}
+.p5 .cap__txt .raiz{font-size:21px;font-weight:600;color:var(--tx);margin-top:40px;margin-bottom:6px;line-height:1.35}
+.p5 .cap__txt .big{font-size:clamp(76px,8vw,128px);color:var(--mr)}
+
+/* ---------- adiantar ---------- */
+.p5 .adi{padding:128px 0}
+.p5 .adi__head{display:flex;align-items:end;justify-content:space-between;gap:32px;margin-bottom:56px}
+.p5 .items{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.p5 .it{display:flex;flex-direction:column;gap:24px;padding:42px 36px 46px 0;border-bottom:1px solid var(--line);font-size:20px;font-weight:600;line-height:1.35;color:var(--tx)}
+.p5 .it:not(:nth-child(3n+1)){padding-left:36px;border-left:1px solid var(--line)}
+.p5 .it span{max-width:13em}
+.p5 .it .ic{width:40px;height:40px;stroke:#B3662B;stroke-width:1.4}
+.p5 .it .ic--mark{width:48px;height:34px}
+
+/* ---------- morar / investir ---------- */
+.p5 .path__grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+
+/* ---------- história ---------- */
+.p5 .his{background:var(--mr);color:#fff;padding:128px 0}
+.p5 .his .wrap{display:grid;grid-template-columns:1fr 1.3fr;gap:96px;align-items:center;max-width:1120px}
+.p5 .his .logo{width:min(100%,300px);justify-self:center}
+.p5 .his .h2{color:#fff;margin-bottom:22px}
+.p5 .his p{font-size:17px;color:rgba(255,255,255,.82);margin-bottom:14px;max-width:32em}
+.p5 .his .btn{margin-top:18px}
+
+/* ---------- chegando ---------- */
+.p5 .che{position:relative;overflow:hidden;text-align:center;padding-top:128px;
+  background:radial-gradient(ellipse 60% 50% at 50% 100%,#D6A052,transparent 70%),linear-gradient(180deg,#C08533,#C99645)}
+.p5 .che .wrap{position:relative;z-index:2;max-width:860px}
+.p5 .che__small{font-size:clamp(28px,2.8vw,40px);font-weight:300}
+.p5 .che__small strong{font-weight:700}
+.p5 .che .hand{font-size:clamp(90px,10vw,160px);color:var(--tx);margin:6px 0 24px}
+.p5 .che-p{font-size:18px;max-width:34em;margin:0 auto 36px;color:#4A2F14}
+.p5 .che .cta-row{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+.p5 .che .tree{position:relative;z-index:1;width:min(96%,820px);margin:56px auto -4px}
+
+.p5 .foot{padding:40px 0 calc(40px + env(safe-area-inset-bottom,0px));font-size:13px;color:var(--tx2)}
+.p5 .foot .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.p5 .foot .logo{width:104px}
+
+.p5 .wa-float{position:fixed;right:24px;bottom:24px;z-index:45;width:58px;height:58px;border-radius:50%;background:#1FA855;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.2);transition:transform .2s,background .2s}
+.p5 .wa-float:hover{background:#178A45;transform:scale(1.05)}
+.p5 .wa-float .ic{width:28px;height:28px;stroke:#fff;stroke-width:1.7}
+.p5 .mbar{display:none}
+
+@media (max-width:1100px){
+  .p5 .hero .wrap{grid-template-columns:minmax(0,1fr) 480px;gap:32px}
+  .p5 .hero__tree{right:calc(24px + 240px - var(--tw)/2)}
+  .p5 .facts{grid-template-columns:1fr;gap:12px}
+  .p5 .facts li{flex-direction:row;align-items:center}
+}
+@media (max-width:900px){
+  .p5 .hero{min-height:0;display:flex;flex-direction:column;padding:48px 0 40px}
+  .p5 .hero .wrap{display:contents}
+  .p5 .hero__txt{order:1;padding:0 24px}
+  .p5 .hero__tree{order:2;position:relative;right:auto;bottom:auto;width:min(112vw,620px);margin:28px 0 0 50%;transform:translateX(-50%);flex:none}
+  .p5 .card{order:3;margin:-30vw 16px 0;z-index:2}
+  .p5 .cap,.p5 .his .wrap,.p5 .path__grid{grid-template-columns:1fr}
+  .p5 .cap{grid-template-columns:minmax(0,1fr)}
+  .p5 .cap__txt .big{font-size:clamp(54px,16vw,128px)}
+  .p5 .che .hand{font-size:clamp(62px,18vw,160px)}
+  .p5 .che__small{font-size:26px}
+  .p5 .form .btn{font-size:15px;padding:0 12px}
+  .p5 .his .logo{width:220px}
+  .p5 .adi{padding-top:64px}
+  .p5 .his .wrap{gap:48px}
+  .p5 .cap .photo{min-height:380px}
+  .p5 .cap__txt{padding:64px 24px 24px}
+  .p5 .items{grid-template-columns:1fr 1fr}
+  .p5 .it:not(:nth-child(3n+1)){padding-left:0;border-left:0}
+  .p5 .it:nth-child(even){padding-left:28px;border-left:1px solid var(--line)}
+  .p5 .adi__head{flex-direction:column;align-items:flex-start}
+  .p5 .che{padding-top:88px}
+  .p5 .wa-float{display:none}
+  .p5 .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:45;background:#fff;
+    padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -1px 0 var(--line);transform:translateY(110%);transition:transform .3s var(--ease)}
+  .p5 .mbar.show{transform:none}
+  .p5 .mbar .btn{padding:0;height:50px;font-size:14px}
+  .p5 .foot{padding-bottom:calc(100px + env(safe-area-inset-bottom,0px))}
+}
+@media (max-width:560px){
+  .p5 .form{grid-template-columns:1fr}
+  .p5 .items{grid-template-columns:1fr}
+  .p5 .it:nth-child(even){padding-left:0;border-left:0}
+  .p5 .it{flex-direction:row;align-items:center;padding:24px 0;font-size:17px}
+  .p5 .card{padding:30px 22px 26px}
+  .p5 .card__t{font-size:34px}
+  .p5 .foot .wrap{flex-direction:column}
+}
+
+/* ================= ANIMAÇÕES E HOVERS (camada extra) ================= */
+/* letras que se escrevem */
+.p5 [data-split] .w{display:inline-block;white-space:nowrap}
+.p5 [data-split] .ch{display:inline-block;transition:translate .35s cubic-bezier(.3,1.6,.5,1),color .3s}
+.p5.js [data-split] .ch{opacity:0;transform:translateY(.4em) rotate(6deg)}
+.p5.js [data-split].in .ch{animation:rdi-ch .7s cubic-bezier(.2,.8,.2,1) calc(var(--i) * 45ms + var(--d0,0ms)) forwards}
+@keyframes rdi-ch{to{opacity:1;transform:none}}
+.p5 [data-split] .ch:hover{translate:0 -.14em;color:#8A4A12}
+.p5 .che [data-split] .ch:hover,.p5 .che .hand .ch:hover{color:#6E3A0E}
+/* palavras que entram */
+.p5.js [data-words] .wd{display:inline-block;opacity:0;transform:translateY(.5em)}
+.p5.js [data-words].in .wd{animation:rdi-ch .6s cubic-bezier(.2,.8,.2,1) calc(var(--i) * 60ms) forwards}
+/* blocos que sobem ao rolar */
+.p5.js [data-rv]{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--rd,0s)}
+.p5.js [data-rv].in{opacity:1;transform:none}
+
+/* flores giram no hover */
+.p5 .hero .wrap{pointer-events:none}
+.p5 .hero .wrap > *{pointer-events:auto}
+.p5 .tree .f{transition:scale .45s cubic-bezier(.3,1.6,.5,1),rotate .6s var(--ease);cursor:default}
+.p5 .tree .f:hover{scale:1.45;rotate:60deg}
+
+/* fatos do hero */
+.p5 .facts li{transition:color .25s}
+.p5 .facts .ic{transition:transform .35s cubic-bezier(.3,1.6,.5,1),stroke .25s}
+.p5 .facts li:hover .ic{transform:translateY(-4px) scale(1.1);stroke:#8A4A12}
+.p5 .facts li:hover{color:#8A4A12}
+
+/* link do WhatsApp no hero */
+.p5 .hero__alt a{transition:text-underline-offset .25s,color .25s}
+.p5 .hero__alt a:hover{text-underline-offset:6px;color:#6E3A0E}
+.p5 .hero__alt a:hover .wai{animation:rdi-shake .5s}
+@keyframes rdi-shake{25%{transform:rotate(-14deg)}50%{transform:rotate(10deg)}75%{transform:rotate(-6deg)}}
+
+/* formulário */
+.p5 .fld label,.p5 .seg legend{transition:color .2s}
+.p5 .fld:focus-within label{color:#B3662B}
+.p5 .fld input:hover{border-color:#D8C3A3}
+.p5 .seg span{transition:all .2s}
+.p5 .seg label:hover input:not(:checked) + span{border-color:var(--oc);background:#fff;color:var(--tx)}
+.p5 .seg label:hover .ic{transform:translateY(-2px)}
+.p5 .seg .ic{transition:transform .25s}
+
+/* botões */
+.p5 .btn{position:relative;overflow:hidden;transition:background .25s,color .25s,transform .25s var(--ease),box-shadow .25s}
+.p5 .btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px -10px rgba(58,29,5,.55)}
+.p5 .btn:active{transform:translateY(0);box-shadow:none}
+.p5 .btn::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);pointer-events:none}
+.p5 .btn:hover::after{animation:rdi-shine .8s ease}
+@keyframes rdi-shine{to{left:130%}}
+
+/* itens do "O que já podemos adiantar?" */
+.p5 .it{position:relative;transition:background .3s,color .3s}
+.p5 .it::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--oc);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
+.p5 .it:hover::after{transform:scaleX(1)}
+.p5 .it .ic,.p5 .it .it__logo{transition:transform .4s cubic-bezier(.3,1.6,.5,1),stroke .3s}
+.p5 .it:hover .ic{transform:translateY(-6px) rotate(-6deg);stroke:var(--mr)}
+.p5 .it:hover .it__logo{transform:translateY(-4px) scale(1.05)}
+
+/* foto e logo */
+.p5 .his .logo{transition:transform .5s var(--ease)}
+.p5 .his .logo:hover{transform:scale(1.04)}
+
+/* WhatsApp flutuante com etiqueta */
+.p5 .wa-float::before{content:"Fale no WhatsApp";position:absolute;right:calc(100% + 12px);top:50%;transform:translate(8px,-50%);opacity:0;white-space:nowrap;
+  background:#fff;color:var(--tx);font:700 14px var(--sans);padding:10px 14px;border-radius:4px;box-shadow:0 8px 24px rgba(0,0,0,.15);transition:opacity .25s,transform .25s var(--ease);pointer-events:none}
+.p5 .wa-float:hover::before{opacity:1;transform:translate(0,-50%)}
+.p5 .wa-float:hover .wai{animation:rdi-shake .5s}
+
+@media (hover:none){ .p5 .tree .f:hover{scale:1;rotate:0deg} }
+@media (prefers-reduced-motion:reduce){
+  .p5.js [data-split] .ch,.p5.js [data-words] .wd,.p5.js [data-rv]{opacity:1!important;transform:none!important}
+  .p5 .btn::after{display:none}
+}
+
+.p5 .hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+.p5 .err a{color:inherit;font-weight:700;text-decoration:underline}
+.p5 .form .btn[disabled]{opacity:.7;cursor:progress;transform:none;box-shadow:none}
+
+</style>
+
+<div class="rdi p5">
+  <svg class="defs" aria-hidden="true" focusable="false">
+    <symbol id="rdi-flor" viewBox="-10 -10 20 20">
+      <g fill="currentColor"><path id="rdi-pet" d="M0-1C-4-3-5-9-2.5-9.5-1-9.8 0-8.5 0-7.5 0-8.5 1-9.8 2.5-9.5 5-9 4-3 0-1Z"/><use href="#rdi-pet" transform="rotate(90)"/><use href="#rdi-pet" transform="rotate(180)"/><use href="#rdi-pet" transform="rotate(270)"/></g>
+      <path d="M0-6V6M-6 0H6" stroke="rgba(60,30,0,.25)" stroke-width=".9" fill="none"/><circle r="1.4" fill="rgba(60,30,0,.32)"/>
+    </symbol>
+    <symbol id="rdi-mark" viewBox="0 0 60 42">
+      <path d="M0 0L12 9V42H0Z" fill="var(--lg-b,#3F9AA0)"/><path d="M60 0L48 9V42H60Z" fill="var(--lg-b,#3F9AA0)"/><path d="M0 0H12L30 15 48 0H60L30 28Z" fill="var(--lg-a,#2B2A6E)"/>
+    </symbol>
+    <symbol id="rdi-logo" viewBox="0 0 200 118">
+      <use href="#rdi-mark" x="70" y="0" width="60" height="42"/>
+      <text x="100" y="88" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-weight="700" font-size="44" letter-spacing="1" fill="var(--lg-a,#2B2A6E)">MORAIS</text>
+      <text x="100" y="110" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-weight="400" font-size="12.6" letter-spacing=".6" fill="var(--lg-a,#2B2A6E)">ENGENHARIA E CONSTRUÇÃO</text>
+    </symbol>
+  </svg>
+
+
+  <!-- HERO: árvore gigante com o formulário dentro -->
+  <section class="hero" id="rdi-topo">
+    <svg class="tree anim hero__tree" data-tree data-seed="7" viewBox="0 0 640 620" aria-hidden="true"></svg>
+    <div class="wrap">
+      <div class="hero__txt intro">
+        <h1><span class="lead" data-words>Um <strong>novo lugar</strong> para a sua vida <strong>florescer</strong> está chegando a</span>
+        <span class="hand city" data-split style="--d0:500ms">Senador Canedo.</span></h1>
+      <p class="sub">O <strong>primeiro condomínio fechado</strong> da Morais está prestes a nascer no Parque dos Buritis.</p>
+        <ul class="facts">
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V7l2.5-3L9 7v14M15 21V7l2.5-3L20 7v14M9 10h6M9 14h6M9 18h6M2 21h20"/></svg>Condomínio fechado</li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 9.5V20h14V9.5"/><path d="M10 20v-5h4v5"/></svg>Casas com 3 quartos e suíte</li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Parque dos Buritis, Senador Canedo</li>
+        </ul>
+        <p class="hero__alt">Prefere conversar? <a data-wa href="#"><svg class="wai" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Fale no WhatsApp</a></p>
+      </div>
+
+      <div class="card" id="rdi-form">
+        <form class="form" novalidate>
+          <div class="hp" aria-hidden="true"><label for="rdi-site">Não preencha</label><input id="rdi-site" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <p class="card__t full">Seja um dos primeiros a se cadastrar!</p>
+          <p class="card__s full">Receba antes de todo mundo as informações sobre localização, plantas, condições comerciais e abertura de vendas.</p>
+          <div class="fld"><label for="rdi-nome">Nome</label><input id="rdi-nome" name="nome" type="text" autocomplete="name" required></div>
+          <div class="fld"><label for="rdi-email">Email</label><input id="rdi-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="fld full"><label for="rdi-tel">WhatsApp</label><input id="rdi-tel" name="telefone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="(62) 99999-9999" required></div>
+          <fieldset class="seg full"><legend>Você procura imóvel para morar ou investir?</legend>
+            <div class="seg__opts">
+              <label><input type="radio" name="objetivo" value="morar"><span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 9.5V20h14V9.5"/><path d="M10 20v-5h4v5"/></svg>Morar</span></label>
+              <label><input type="radio" name="objetivo" value="investir"><span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>Investir</span></label>
+            </div>
+          </fieldset>
+          <p class="err full" role="alert"></p>
+          <button class="btn full" type="submit">Quero receber em primeira mão!</button>
+        </form>
+        <div class="ok" hidden tabindex="-1">
+          <div class="flw"><svg class="fl" viewBox="-10 -10 20 20" aria-hidden="true" style="color:#F7C21E"><use href="#rdi-flor"/></svg><svg class="fl" viewBox="-10 -10 20 20" aria-hidden="true" style="color:#EF79B0"><use href="#rdi-flor"/></svg><svg class="fl" viewBox="-10 -10 20 20" aria-hidden="true" style="color:#9A7BE3"><use href="#rdi-flor"/></svg></div>
+          <h3>Recebemos seu contato, <span data-nome></span>!</h3>
+          <p>Você receberá em primeira mão as informações sobre localização, plantas, condições comerciais e abertura de vendas.</p>
+          <a class="btn btn--wa" data-wa href="#"><svg class="wai" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Falar agora pelo WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cap" id="rdi-projeto">
+    <div class="photo photo--familia" role="img" aria-label="Família sob um ipê florido"></div>
+    <div class="cap__txt"><p>Depois de mais de 800 lares entregues e de uma história construída junto às famílias de Senador Canedo, a Morais Engenharia prepara um novo capítulo.</p>
+      <p>Um empreendimento pensado para quem deseja conquistar o próprio lar com mais segurança, conforto, lazer e qualidade de vida.</p>
+      <p class="raiz">Um lugar feito para criar raízes,<br>viver conquistas e ver novas histórias</p>
+      <p class="hand big" data-split>Florescerem.</p></div>
+  </section>
+
+  <section class="adi">
+    <div class="wrap">
+      <div class="adi__head">
+        <h2 class="h2" data-rv>O que já podemos adiantar?</h2>
+        <a class="btn btn--ghost" href="#rdi-form" data-go>Entrar na lista de interesse</a>
+      </div>
+      <ul class="items">
+        <li class="it"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V7l2.5-3L9 7v14M15 21V7l2.5-3L20 7v14M9 10h6M9 14h6M9 18h6M2 21h20"/></svg><span>Condomínio fechado no Parque dos Buritis</span></li>
+        <li class="it"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 9.5V20h14V9.5"/><path d="M10 20v-5h4v5"/></svg><span>Casas com 3 quartos e suíte</span></li>
+        <li class="it"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-6"/><path d="M12 15c-4 0-6.5-2.3-6.5-5.3C5.5 6.5 8.4 3 12 3s6.5 3.5 6.5 6.7c0 3-2.5 5.3-6.5 5.3z"/><path d="M4 21h16"/></svg><span>Lazer e convivência para toda a família</span></li>
+        <li class="it"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 11.5C9 9.5 8.3 5 10 4.5c1-.3 2 .5 2 1.3 0-.8 1-1.6 2-1.3 1.7.5 1 5-2 7z"/><path d="M12 12.5c-3 2-3.7 6.5-2 7 1 .3 2-.5 2-1.3 0 .8 1 1.6 2 1.3 1.7-.5 1-5-2-7z"/><path d="M11.5 12C9.5 15 5 15.7 4.5 14c-.3-1 .5-2 1.3-2-.8 0-1.6-1-1.3-2 .5-1.7 5-1 7 2z"/><path d="M12.5 12c2-3 6.5-3.7 7-2 .3 1-.5 2-1.3 2 .8 0 1.6 1 1.3 2-.5 1.7-5 1-7-2z"/></svg><span>Projeto inspirado na beleza dos ipês</span></li>
+        <li class="it"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8 20 3M16.5 6.5l3 3M13.8 9.2l2 2"/></svg><span>Condições facilitadas para conquistar seu novo lar</span></li>
+        <li class="it"><img class="it__logo" src="/teaser/img/morais.webp" alt="" width="800" height="445" loading="lazy"><span>Assinatura Morais Engenharia</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="his" id="rdi-morais">
+    <div class="wrap">
+      <img class="logo" src="/teaser/img/morais-branca.webp" alt="Morais Engenharia e Construção" width="589" height="443" loading="lazy">
+      <div><h2 class="h2" data-rv>Uma história que já criou raízes em Senador Canedo.</h2>
+      <p>A Morais já entregou mais de 800 lares e construiu uma relação de confiança com centenas de famílias.</p>
+      <p>Agora, essa experiência dá origem ao seu primeiro condomínio fechado: um projeto criado para quem quer sair do aluguel, morar melhor ou conquistar o lar definitivo em uma localização com grande potencial de valorização.</p></div>
+    </div>
+  </section>
+
+  <section class="che">
+    <div class="wrap">
+      <p class="che__small" data-words>O <strong>lançamento</strong> oficial está</p>
+      <p class="hand" data-split>Chegando!</p>
+      <p class="che-p" data-rv>Entre para a lista de interesse e receba, antes de todo mundo, as informações sobre localização, plantas, condições comerciais e abertura de vendas.</p>
+      <div class="cta-row"><a class="btn" href="#rdi-form" data-go>Quero saber primeiro!</a></div>
+    </div>
+    <svg class="tree anim" data-tree data-seed="21" viewBox="0 0 640 620" aria-hidden="true"></svg>
+  </section>
+
+  <footer class="foot"><div class="wrap"><img class="logo" src="/teaser/img/morais.webp" alt="Morais Engenharia e Construção" width="800" height="445" loading="lazy"><span>Imagens meramente ilustrativas. Empreendimento em fase de pré-lançamento.</span></div></footer>
+
+  <a class="wa-float" data-wa href="#" aria-label="Falar no WhatsApp"><svg class="wai" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+  <div class="mbar" aria-label="Ações rápidas"><a class="btn" href="#rdi-form" data-go>Entrar na lista</a><a class="btn btn--wa" data-wa href="#"><svg class="wai" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>WhatsApp</a></div>
+
+</div>
+
+<script>
+(function(){
+  /* ============ CONFIGURAÇÃO — edite aqui ============ */
+  var WHATS_NUMERO = '556294273636';   /* TROCAR pelo WhatsApp comercial da Morais (55 + DDD + número) */
+  var WHATS_MSG    = 'Olá! Quero receber as informações do lançamento da Morais no Parque dos Buritis.';
+  var WEBHOOK_URL  = 'https://hook.us2.make.com/mnlf1s683gdfiv41b1r42gzvv8cooc63';
+  /* =================================================== */
+
+  var root=document.querySelector('.rdi'); if(!root) return;
+  root.classList.add('js');
+  var NS='http://www.w3.org/2000/svg', reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var COR={y:'#F7C21E',p:'#EF79B0',w:'#F4F1EC',v:'#9A7BE3',o:'#E08A2E'};
+  function rng(s){return function(){s|=0;s=s+0x6D2B79F5|0;var t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+  function el(n,a){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);return e}
+  function $(s,c){return (c||root).querySelector(s)}
+  function $$(s,c){return Array.prototype.slice.call((c||root).querySelectorAll(s))}
+
+  /* ---------- árvore de ipê ---------- */
+  $$('[data-tree]').forEach(function(svg){
+    var r=rng(+svg.dataset.seed||7), tr=svg.dataset.trunk||'#fff', pal=(svg.dataset.pal||'ypwv').split('');
+    var g=el('g',{fill:'none',stroke:tr,'stroke-linecap':'round'});
+    [['M322 450C262 402 160 396 88 330',20],['M150 382C130 350 118 330 112 300',9],['M326 440C300 340 256 268 232 168',18],
+     ['M262 300C250 262 236 244 212 222',8],['M330 432C362 340 344 238 322 150',12],['M336 444C424 404 506 368 570 322',20],
+     ['M338 420C420 350 470 310 500 262',12],['M470 380C500 352 520 326 530 300',8]]
+    .forEach(function(b){g.appendChild(el('path',{d:b[0],'stroke-width':b[1],pathLength:1,'class':'brc'}))});
+    svg.appendChild(g);
+    svg.appendChild(el('path',{d:'M292 620C302 552 298 492 312 430L348 430C356 494 362 556 380 620Z',fill:tr,'class':'trk'}));
+    var pts=[],cx=320,cy=300,rx=280,ry=235,n=0,fl=el('g',{});
+    while(pts.length<170&&n++<9000){
+      var x=cx-rx+r()*rx*2,y=cy-ry+r()*ry*2,s=.9+r()*.8;
+      if(Math.pow((x-cx)/rx,2)+Math.pow((y-cy)/ry,2)>1||y>500)continue;
+      if(pts.some(function(p){return (x-p[0])*(x-p[0])+(y-p[1])*(y-p[1])<Math.pow((s+p[2])*9.5,2)}))continue;
+      pts.push([x,y,s]);
+      var c = x<330&&y<250?pal[0] : x<190?pal[1] : y<290?pal[2] : x>390?pal[3] : pal[Math.floor(r()*4)];
+      var gg=el('g',{transform:'translate('+x.toFixed(1)+' '+y.toFixed(1)+')'});
+      var u=el('use',{href:'#rdi-flor',x:(-10*s).toFixed(1),y:(-10*s).toFixed(1),width:(20*s).toFixed(1),height:(20*s).toFixed(1),'class':'f'});
+      u.style.color=COR[c]; u.style.setProperty('--r',Math.floor(r()*90)+'deg');
+      u.style.setProperty('--d',(1.5+(500-y)/500*1.3+r()*.4).toFixed(2)+'s');
+      gg.appendChild(u); fl.appendChild(gg);
+    }
+    svg.appendChild(fl);
+  });
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.25});
+  $$('.tree.anim,.intro').forEach(function(n){io.observe(n)});
+
+  /* ---------- rastreamento (Meta Pixel + GTM, se existirem na página) ---------- */
+  function track(ev,data){
+    try{ if(window.fbq) fbq('track',ev,data||{}); }catch(e){}
+    try{ (window.dataLayer=window.dataLayer||[]).push(Object.assign({event:'rdi_'+ev.toLowerCase()},data||{})); }catch(e){}
+  }
+
+  /* ---------- WhatsApp: todos os botões usam a mesma config ---------- */
+  var waUrl='https://wa.me/'+WHATS_NUMERO+'?text='+encodeURIComponent(WHATS_MSG);
+  $$('[data-wa]').forEach(function(a){a.href=waUrl;a.target='_blank';a.rel='noopener';
+    a.addEventListener('click',function(){track('Contact',{canal:'whatsapp'})});});
+
+  /* ---------- formulário ---------- */
+  var f=$('.form'), box=$('#rdi-form');
+  var forms=$$('form');
+
+  /* máscara de telefone: aceita colar/autofill com +55 sem cortar dígitos */
+  forms.forEach(function(fr){
+    var tel=fr.querySelector('[name="telefone"]');
+    if(!tel) return;
+    tel.addEventListener('input',function(){
+      var d=tel.value.replace(/\D/g,'');
+      if(d.length>11&&d.slice(0,2)==='55') d=d.slice(2);
+      d=d.slice(0,11);
+      var o='';
+      if(d.length)o='('+d.slice(0,2);
+      if(d.length>=3)o+=') '+d.slice(2,7);
+      if(d.length>=8)o+='-'+d.slice(7);
+      tel.value=o;
+    });
+  });
+
+  function bad(inp,msg){
+    var form=inp.closest('form'), e=form&&form.querySelector('.err');
+    if(e) e.textContent=msg;
+    inp.setAttribute('aria-invalid','true'); inp.focus();
+  }
+
+  function rdiMostrarSucesso(form, payload){
+    var bx=form.closest('#rdi-form')||form.parentElement, ok=bx.querySelector('.ok');
+    if(!ok) return;
+    var n=ok.querySelector('[data-nome]');
+    if(n) n.textContent=(payload.nome||'').split(' ')[0];
+    form.hidden=true; ok.hidden=false; ok.focus();
+    onScroll();
+  }
+
+  forms.forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var fm = e.currentTarget;
+      var errEl=fm.querySelector('.err'); if(errEl) errEl.textContent='';
+      var seg=fm.querySelector('.seg'); if(seg) seg.classList.remove('invalid');
+      $$('[aria-invalid]',fm).forEach(function(i){i.removeAttribute('aria-invalid')});
+
+      /* lê sempre do formulário que foi enviado (não depende de id global) */
+      var get = function (name) {
+        var el = fm.querySelector('[name="' + name + '"]');
+        return el ? el.value.trim() : '';
+      };
+
+      /* validação: mostra o erro no campo */
+      var nomeEl=fm.querySelector('[name="nome"]'), emailEl=fm.querySelector('[name="email"]'), telEl=fm.querySelector('[name="telefone"]');
+      if (get('nome').length < 2) return bad(nomeEl,'Informe seu nome.');
+      if (!/^\S+@\S+\.\S+$/.test(get('email'))) return bad(emailEl,'Informe um email válido.');
+      var digits = get('telefone').replace(/\D/g, '');
+      if (digits.length > 11 && digits.slice(0,2) === '55') digits = digits.slice(2);
+      if (digits.length !== 11 || digits.charAt(2) !== '9') return bad(telEl,'Informe um WhatsApp válido com DDD e 9 dígitos.');
+      var objEl=fm.querySelector('[name="objetivo"]:checked');
+      if(!objEl){
+        if(seg) seg.classList.add('invalid');
+        if(errEl) errEl.textContent='Escolha se procura para morar ou investir.';
+        return;
+      }
+
+      /* honeypot: robô preencheu o campo invisível — finge sucesso, não envia */
+      if (get('website')) return rdiMostrarSucesso(fm,{nome:get('nome')});
+
+      var params = new URLSearchParams(window.location.search);
+      var payload = {
+        nome: get('nome'),
+        telefone: '55' + digits, /* sempre exatamente UM 55 na frente */
+        email: get('email'),
+        objetivo: objEl.value,
+        utm_source: params.get('utm_source') || '',
+        utm_medium: params.get('utm_medium') || '',
+        utm_campaign: params.get('utm_campaign') || '',
+        utm_content: params.get('utm_content') || '',
+        utm_term: params.get('utm_term') || '',
+        pagina: window.location.href
+      };
+
+      track('Lead',{objetivo:payload.objetivo});
+
+      fetch(WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+        keepalive: true
+      }).catch(function () {}); /* nunca mostra erro pro lead */
+
+      /* segue direto pra tela de sucesso, sem esperar o Make */
+      rdiMostrarSucesso(fm, payload);
+    });
+  });
+
+  /* ---------- botões "entrar na lista" (com morar/investir pré-marcado) ---------- */
+  root.addEventListener('click',function(e){
+    var a=e.target.closest('[data-go]'); if(!a) return;
+    e.preventDefault();
+    if(a.dataset.obj){var r=f.querySelector('[name=objetivo][value='+a.dataset.obj+']'); if(r) r.checked=true;}
+    var top=box.getBoundingClientRect().top+window.scrollY-(innerWidth<900?84:120);
+    window.scrollTo({top:top,behavior:reduce?'auto':'smooth'});
+    setTimeout(function(){var i=f.hidden?null:f.querySelector('[name="nome"]');i&&i.focus({preventScroll:true})},reduce?0:600);
+  });
+
+  /* ---------- barra mobile ---------- */
+  var mbar=$('.mbar'), cad=$('#rdi-form');
+  function onScroll(){
+    var cr=cad.getBoundingClientRect(), formVisivel=cr.top<innerHeight&&cr.bottom>0;
+    mbar.classList.toggle('show',!formVisivel&&!box.querySelector('.ok:not([hidden])'));
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  /* ================= ANIMAÇÕES DE TEXTO ================= */
+  function sr(el,txt){var s=document.createElement('span');s.className='sr';s.textContent=txt;s.style.cssText='position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap';el.appendChild(s)}
+  /* letra por letra (mantém palavras inteiras juntas na quebra de linha) */
+  $$('[data-split]').forEach(function(el){
+    var txt=el.textContent.trim(), i=0; el.textContent='';
+    var bx=document.createElement('span'); bx.setAttribute('aria-hidden','true');
+    txt.split(' ').forEach(function(w,wi,arr){
+      var ws=document.createElement('span'); ws.className='w';
+      w.split('').forEach(function(c){var s=document.createElement('span');s.className='ch';s.textContent=c;s.style.setProperty('--i',i++);ws.appendChild(s)});
+      bx.appendChild(ws); if(wi<arr.length-1) bx.appendChild(document.createTextNode(' '));
+    });
+    el.appendChild(bx); sr(el,txt);
+  });
+  /* palavra por palavra (preserva negritos) */
+  $$('[data-words]').forEach(function(el){
+    var i=0;
+    Array.prototype.slice.call(el.childNodes).forEach(function(n){
+      if(n.nodeType===3){
+        var frag=document.createDocumentFragment();
+        n.textContent.split(/(\s+)/).forEach(function(p){
+          if(!p) return;
+          if(/^\s+$/.test(p)){frag.appendChild(document.createTextNode(p));return;}
+          var s=document.createElement('span');s.className='wd';s.textContent=p;s.style.setProperty('--i',i++);frag.appendChild(s);
+        });
+        el.replaceChild(frag,n);
+      } else if(n.nodeType===1 && n.tagName!=='BR'){ n.classList.add('wd'); n.style.setProperty('--i',i++); }
+    });
+  });
+  /* itens entram em sequência */
+  $$('.it').forEach(function(it,k){it.setAttribute('data-rv','');it.style.setProperty('--rd',(k%3)*0.08+'s')});
+  $$('[data-split],[data-words],[data-rv]').forEach(function(n){io.observe(n)});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "nome": "Reserva dos Ipês",
+  "construtora": "Morais Engenharia",
+  "url": "https://reservadosipescanedo.com.br",
+  "simuladorUrl": "https://devmoraiseng.github.io/SIMULADOR-RESERVA-DO-IP-S/index.html",
+  "localizacao": {
+    "bairro": "Parque dos Buritis",
+    "cidade": "Senador Canedo",
+    "uf": "GO",
+    "enderecoCompleto": null,
+    "mapsUrl": null
+  },
+  "contato": {
+    "whatsapp": null,
+    "instagram": null
+  },
+  "politicaPrivacidadeUrl": null
+}

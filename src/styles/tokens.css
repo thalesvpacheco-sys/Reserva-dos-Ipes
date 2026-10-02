@@ -1,0 +1,60 @@
+/* Tokens do Reserva dos Ipês (direção "Dia e noite").
+   O site tem dois modos próprios, escolhidos pelo visitante no botão Dia/Noite (html[data-mode]),
+   independentes do tema do sistema. Ver docs/DESIGN-TOKENS.md. */
+:root {
+  color-scheme: light;
+  --bg: #F4F7FB;          /* fundo: branco frio do céu */
+  --surface: #FFFFFF;
+  --ink: #172238;         /* azul do entardecer, texto principal */
+  --ink-2: #4B5670;       /* texto secundário */
+  --line: #D6DEE9;
+  --btn: #172238;
+  --on-btn: #FFFFFF;
+  --wordmark: #856524;    /* dourado da logo */
+  --lamp: #E9A23B;        /* luz de poste: destaque */
+  --deep: #101A2E;        /* seções noturnas */
+  --on-deep: #EEF2F8;
+  --on-deep-2: #A9B5CA;
+  --err: #B3261E;
+
+  /* cores das quatro ruas (só para identificar a rua) */
+  --ipe-branco: #E6E2D8;
+  --ipe-rosa: #EC7FAE;
+  --ipe-amarelo: #F5BE1A;
+  --ipe-roxo: #9C80DE;
+
+  /* Montserrat no texto; Fraunces só em títulos, números grandes e frases de destaque */
+  --f: var(--font-montserrat), system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --ft: var(--font-fraunces), Georgia, "Times New Roman", serif;
+
+  --gut: clamp(20px, 3.6vw, 72px);
+  --max: 1680px;
+  --ease: cubic-bezier(.2, .8, .2, 1);
+}
+
+:root[data-mode="noite"] {
+  color-scheme: dark;
+  --bg: #0F1829;
+  --surface: #17233A;
+  --ink: #EEF2F8;
+  --ink-2: #A9B5CA;
+  --line: #2A3853;
+  --btn: #F2B44A;
+  --on-btn: #101A2E;
+  --deep: #0A1220;
+  --wordmark: #EADBB8;
+  --err: #FF9C8F;
+}
+
+/* expõe os tokens como utilitários do Tailwind (bg-bg, text-ink, border-line...) */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-line: var(--line);
+  --color-lamp: var(--lamp);
+  --color-deep: var(--deep);
+  --font-sans: var(--f);
+  --font-serif: var(--ft);
+}

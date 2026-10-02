@@ -1,0 +1,125 @@
+{
+  "hero": {
+    "titulo": "Reserva dos Ipês",
+    "subtitulo": "O primeiro condomínio fechado da Morais Engenharia.",
+    "descricao": "Casas de 3 quartos com suíte em Senador Canedo, no Parque dos Buritis.",
+    "texto": "Um novo padrão de vida para quem busca segurança, lazer, conforto e a conquista do próprio lar com a confiança de quem já construiu mais de 800 lares.",
+    "cta": "Quero conhecer o Reserva dos Ipês",
+    "comparar": {
+      "dia": "Dia",
+      "noite": "Entardecer",
+      "label": "Comparar a portaria de dia e ao entardecer"
+    }
+  },
+  "form": {
+    "campos": [
+      "Nome",
+      "WhatsApp",
+      "E-mail",
+      "Você busca imóvel para morar ou investir?",
+      "Qual valor de entrada você possui?",
+      "Qual parcela mensal ideal para você?"
+    ],
+    "cta": "Falar com um consultor",
+    "titulo": "Quero fazer parte do Reserva dos Ipês",
+    "sucesso": "Recebemos seus dados. Um consultor da Morais Engenharia vai falar com você pelo WhatsApp."
+  },
+  "localizacao": {
+    "titulo": "O seu novo lar no Parque dos Buritis.",
+    "textos": [
+      "O Reserva dos Ipês nasce em uma localização estratégica de Senador Canedo, em um bairro em crescimento, com praticidades próximas e forte potencial de valorização.",
+      "Uma região que a Morais conhece de perto e onde já construiu mais de 150 casas.",
+      "Aqui, você fica perto do que importa e vive com mais tranquilidade dentro de um condomínio fechado."
+    ],
+    "cta": "Ver localização",
+    "imagem": "/images/localizacao/mapa-condominio.webp"
+  },
+  "condominio": {
+    "titulo": "Um condomínio fechado para viver melhor todos os dias.",
+    "texto": "O Reserva dos Ipês foi planejado para oferecer mais qualidade de vida, segurança e convivência para a sua família.",
+    "itens": [
+      "Condomínio fechado com muro e portaria",
+      "Apenas 62 residências",
+      "Casas independentes, não geminadas",
+      "Infraestrutura completa de lazer",
+      "Áreas de convivência e paisagismo"
+    ],
+    "fechamento": "Um projeto pensado para a vida acontecer de verdade"
+  },
+  "casas": {
+    "titulo": "Casas de 3 quartos com suíte e espaço para crescer.",
+    "texto": "Cada casa foi projetada para entregar conforto, funcionalidade e um excelente aproveitamento dos ambientes.",
+    "itens": [
+      "3 quartos",
+      "1 suíte",
+      "70,27 m² de área construída",
+      "Lotes de 180 m²",
+      "Casas independentes",
+      "Espaço para ampliar seus sonhos"
+    ],
+    "fechamento": "Aqui, cada detalhe foi pensado para quem deseja conquistar mais do que uma casa: deseja conquistar um lugar para chamar de seu.",
+    "cta": "Quero escolher minha casa!",
+    "ctaLink": "simuladorUrl",
+    "complemento": "Casas independentes, com espaço para ampliar seus sonhos."
+  },
+  "lazer": {
+    "titulo": "Lazer para aproveitar sem sair de casa.",
+    "texto": "Morar bem também é ter momentos de descanso, encontro e diversão perto de você.",
+    "itens": [
+      "Piscina adulta",
+      "Piscina infantil",
+      "Playground",
+      "Pomar exclusivo",
+      "Espaço pet",
+      "2 mini salões de festas",
+      "Áreas para eventos com churrasqueira",
+      "Áreas de convivência e paisagismo"
+    ],
+    "fechamento": "Um condomínio feito para receber amigos, reunir a família e viver bons momentos todos os dias."
+  },
+  "ruas": {
+    "titulo": "Inspirado na beleza dos ipês.",
+    "texto": "O Reserva dos Ipês carrega no nome e na paisagem a força de uma das árvores mais marcantes do cerrado.",
+    "intro": "São quatro ruas tranquilas e arborizadas, inspiradas nos ipês:",
+    "itens": [
+      "Ipê Branco",
+      "Ipê Rosa",
+      "Ipê Amarelo",
+      "Ipê Roxo"
+    ],
+    "fechamento": "Um projeto pensado para criar identidade, beleza e pertencimento em cada detalhe."
+  },
+  "condicoes": {
+    "titulo": "Conquistar seu novo lar está mais fácil do que parece.",
+    "texto": "O Reserva dos Ipês conta com condições pensadas para facilitar a conquista da casa própria.",
+    "itens": [
+      "Financiamento pela Caixa",
+      "Enquadramento no Minha Casa Minha Vida",
+      "Crédito associativo Caixa aprovado",
+      "Mensais pré-chaves a partir de R$ 750*",
+      "Sinal a partir de R$ 5.000*"
+    ],
+    "cta": "Simular minha condição",
+    "disclaimer": "*Condições sujeitas à análise de crédito, disponibilidade de unidades e alterações sem aviso prévio. Consulte a equipe comercial."
+  },
+  "fechamento": {
+    "titulo": "Mais que uma casa. O seu lugar.",
+    "textos": [
+      "O Reserva dos Ipês é o primeiro condomínio fechado da Morais Engenharia.",
+      "Um projeto criado para quem deseja viver com mais segurança, conforto e qualidade de vida em Senador Canedo."
+    ],
+    "frases": [
+      "Aqui, cada casa representa uma conquista.",
+      "Cada rua, um novo caminho.",
+      "Cada detalhe, uma nova história pronta para florescer."
+    ],
+    "cta": "Quero fazer parte do Reserva dos Ipês"
+  },
+  "rodape": {
+    "assinatura": "Sua vida floresce aqui.",
+    "construtora": "Morais Engenharia",
+    "local": "Parque dos Buritis | Senador Canedo",
+    "contatoRapido": "Deixe seu WhatsApp e um consultor da Morais Engenharia fala com você.",
+    "legal": "Imagens meramente ilustrativas."
+  }
+}
